@@ -2,5 +2,220 @@
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+#top-header {
+  height: 7dvh;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#top-header a {
+  text-decoration: none;
+  color: #000;
+}
+
+#top-header .siteName {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+#top-header #tools {
+  padding-right: 2%;
+}
+
+nav {
+  height: 5dvh;
+  width: 100%;
+  background-color: #303030;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  align-items: center;
+  background-color: #303030;
+  height: 100%;
+  padding-left: 0%;
+}
+
+nav li {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav li:hover {
+  background-color: #000;
+  cursor: pointer;
+}
+
+#main-container {
+  margin: 8px;
+}
+
+#main-title {
+  font-size: 1.3rem;
+}
+
+#hero {
+  position: relative;
+}
+
+#hero-img {
+  width: 100%;
+}
+
+#hero-text {
+  background-color: #ffffff81;
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  color: rgb(0, 59, 168);
+  padding-bottom: 1dvh;
+}
+
+#hero-text p {
+  font-size: 1rem;
+  margin: .5dvh 1dvh;
+}
+
+#button-container {
+  display: flex;
+  justify-content: center;
+}
+
+#hero-text button {
+  width: 90%;
+  text-align: center;
+  background-color: rgb(0, 59, 168);
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  padding: 1dvh;
+}
+
+#hero-text button:hover {
+  background-color: #000;
+  cursor: pointer;
+}
+
+#reviews {
+  margin-bottom: 5dvh;
+  margin-top: 5dvh;
+}
+
+h3 {
+  margin-bottom: 2dvh;
+}
+
+#reviews li {
+  margin-bottom: 2dvh;
+  font-size: .9rem;
+}
+
+#upgrades {
+  margin-bottom: 5dvh;
+  width: 100%;
+}
+
+#upgrade-rows {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5dvh;
+}
+
+#upgrade-container {
+  width: 47%;
+  text-align: center;
+}
+
+.img-container {
+  width: 100%;
+  height: 9dvh;
+  background-color: rgb(0, 59, 168);
+  margin-bottom: 1dvh;
+  border: #000 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  margin-top: 5dvh;
+  padding: 1dvw;
+}
+
+@media screen and (min-width: 790px) {
+  #content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    margin-top: 5dvh;
+  }
+
+  #upgrades {
+    width: 40%;
+  }
+
+  .img-container {
+    height: 9dvh;
+  }
+
+  #reviews {
+    width: 40%;
+    margin-top: 0;
+  }
+
+  .img-container {
+    height: 15dvh;
+  }
+
+  #upgrade-container {
+    max-width: 20dvw;
+  }
+
+  #reviews li {
+    margin-bottom: 3dvh;
+    font-size: 1.2rem;
+  }
+  
+  #hero-text {
+    top: 30%;
+    left: 5%;
+    width: 30%;
+  }
+
+  #hero-img {
+    width: 50%;
+  }
+
+  #hero {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav {
+    height: 8vh;
+  }
+
+  #main-title {
+    font-size: 2rem;
+  }
+
+  #top-header {
+    height: 12vh;
+  }
 }
