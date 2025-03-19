@@ -57,6 +57,46 @@ Util.buildClassificationGrid = async function(data){
   return grid
 }
 
+Util.buildDetailsView = async (data) => {
+  return (`
+    <div id="detailsMain">
+      <div class="detailsImage">
+        <img src="${data.inv_image}" alt="${data.inv_year} ${data.inv_make} ${data.inv_model}">
+      </div>
+      <div id="detailsMainData">
+        <h2 class="detailsTitle">${data.inv_year} ${data.inv_make} ${data.inv_model}</h2>
+        <div class="priceMileageContainer">
+          <div class="mileageCont">
+            <p class="mileageTitle">Mileage</p>
+            <p class="mileage">${(data.inv_miles).toLocaleString("en-US")}</p>
+          </div>
+          <div class="priceCont">
+            <p class="priceDetails">$${Number(data.inv_price).toLocaleString("en-US")}</p>
+            <p class="legend">Does not include $299 Dealer Documentary Fee.</p>
+            <p class="legend2">Estimate Payments</p>
+          </div>
+        </div>
+        <div class="detailsData">
+          <div class="detailsInfo">
+            <p><b>Description: </b>${data.inv_description}</p>
+            <p><b>Mileage: </b>${(data.inv_miles).toLocaleString("en-US")}</p>
+            <p><b>Year: </b>${data.inv_year}</p>
+            <p><b>Brand: </b>${data.inv_make}</p>
+            <p><b>Model: </b>${data.inv_model}</p>
+            <p><b>Color: </b>${data.inv_color}</p>
+          </div>
+          <div class="detailsButtons">
+            <button class="purchaseButton">START MY PURCHASE</button>
+            <button class="contactUsButton">CONTACT US</button>
+            <button class="scheduleButton">SCHEDULE TEST DRIVE</button>
+            <button class="financeButton">APPLY FOR FINANCING</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  `);
+}
+
 /* ****************************************
  * Middleware For Handling Errors
  * Wrap other function in this for 
