@@ -307,6 +307,122 @@ nav a {
   text-align: center;
 }
 
+h1 {
+  padding: 20px;
+}
+
+#loginForm {
+  background-color: #303030;
+  padding: 20px;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#loginForm input {
+  width: 80%;
+  height: 30px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+#loginForm label {
+  display: block;
+  width: 80%;
+  text-align: left;
+  color: white;
+}
+
+#loginForm button {
+  padding: 10px 15px;
+  background-color: #fff;
+  color: #000;
+  border: #000;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#loginForm p {
+  color: #fff;
+}
+
+#loginForm a {
+  color: #fff;
+}
+
+#loginForm span {
+  display: block;
+  width: 80%;
+  color: #fff;
+  text-align: left;
+  font-size: .7rem;
+}
+
+#registerForm {
+  background-color: #303030;
+  padding: 20px;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#registerForm input {
+  width: 80%;
+  height: 30px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+#registerForm label {
+  display: block;
+  width: 80%;
+  text-align: left;
+  color: white;
+}
+
+#registerForm button {
+  padding: 10px 15px;
+  background-color: #fff;
+  color: #000;
+  border: #000;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#registerForm p {
+  color: #fff;
+}
+
+#registerForm a {
+  color: #fff;
+}
+
+#registerForm ul {
+  width: 80%;
+  color: white;
+  text-align: left;
+}
+
+#registerForm span {
+  display: block;
+  width: 80%;
+  color: #fff;
+  text-align: left;
+  font-size: .7rem;
+}
+
 @media screen and (min-width: 790px) {
   #content {
     display: flex;
@@ -502,5 +618,9 @@ nav a {
     background-color: rgb(67, 115, 235);
     color: white;
     font-weight: bold;
+  }
+
+  #registerForm {
+    width: 50%;
   }
 }
