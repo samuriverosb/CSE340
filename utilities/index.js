@@ -97,6 +97,16 @@ Util.buildDetailsView = async (data) => {
   `);
 }
 
+Util.renderSelect = async () => {
+  const data = await invModel.getClassifications();
+  let select = `<select name="classification_id" id="classificationId">`
+  data.rows.forEach(row => {
+    select += `<option value="${row.classification_id}">${row.classification_name}</option>`
+  })
+  select += `</select>`
+  return select;
+}
+
 /* ****************************************
  * Middleware For Handling Errors
  * Wrap other function in this for 

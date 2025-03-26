@@ -423,6 +423,108 @@ h1 {
   font-size: .7rem;
 }
 
+#addClassification {
+  background-color: #303030;
+  padding: 20px;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#addClassification input {
+  width: 80%;
+  height: 30px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+#addClassification label {
+  display: block;
+  width: 80%;
+  text-align: left;
+  color: white;
+}
+
+#addClassification button {
+  padding: 10px 15px;
+  background-color: #fff;
+  color: #000;
+  border: #000;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#addClassification p {
+  color: #fff;
+}
+
+#addClassification span {
+  display: block;
+  width: 80%;
+  color: #fff;
+  text-align: left;
+  font-size: .7rem;
+}
+
+#addInventory {
+  background-color: #303030;
+  padding: 20px;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#addInventory input, #addInventory textarea, #addInventory select {
+  width: 80%;
+  height: 30px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+#addInventory textarea {
+  height: 70px;
+}
+
+#addInventory label {
+  display: block;
+  width: 80%;
+  text-align: left;
+  color: white;
+}
+
+#addInventory button {
+  padding: 10px 15px;
+  background-color: #fff;
+  color: #000;
+  border: #000;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#addInventory p {
+  color: #fff;
+}
+
+#addClassification span {
+  display: block;
+  width: 80%;
+  color: #fff;
+  text-align: left;
+  font-size: .7rem;
+}
+
 @media screen and (min-width: 790px) {
   #content {
     display: flex;
@@ -620,7 +722,19 @@ h1 {
     font-weight: bold;
   }
 
+  #loginForm {
+    width: 50%;
+  }
+
   #registerForm {
+    width: 50%;
+  }
+
+  #addClassification {
+    width: 50%;
+  }
+
+  #addInventory {
     width: 50%;
   }
 }
