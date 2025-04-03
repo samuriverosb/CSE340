@@ -84,7 +84,6 @@ validate.loginRules = () => {
       .escape()
       .notEmpty()
       .isEmail()
-      .normalizeEmail() // refer to validator.js docs
       .withMessage("A valid email is required."),
 
     // password is required and must be strong password

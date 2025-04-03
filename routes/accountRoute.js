@@ -16,9 +16,9 @@ router.post(
   "/login",
   regValidate.loginRules(),
   regValidate.checkloginData,
-  (req, res) => {
-    res.status(200).send('login process')
-  }
+  utilities.handleErrors(accountController.accountLogin)
 )
+
+router.get("/", utilities.handleErrors(accountController.accountDefault));
 
 module.exports = router;
