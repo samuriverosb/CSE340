@@ -19,6 +19,9 @@ router.post(
   utilities.handleErrors(accountController.accountLogin)
 )
 
-router.get("/", utilities.handleErrors(accountController.accountDefault));
+router.get(
+  "/", 
+  utilities.checkLogin,
+  utilities.handleErrors(accountController.accountDefault));
 
 module.exports = router;
