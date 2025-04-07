@@ -570,6 +570,51 @@ h1 {
   color: #fff;
 }
 
+#deleteInventory {
+  background-color: #303030;
+  padding: 20px;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#deleteInventory input, #deleteInventory textarea, #deleteInventory select {
+  width: 80%;
+  height: 30px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+#deleteInventory textarea {
+  height: 70px;
+}
+
+#deleteInventory label {
+  display: block;
+  width: 80%;
+  text-align: left;
+  color: white;
+}
+
+#deleteInventory button {
+  padding: 10px 15px;
+  background-color: #fff;
+  color: #000;
+  border: #000;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#deleteInventory p {
+  color: #fff;
+}
+
 @media screen and (min-width: 790px) {
   #content {
     display: flex;
@@ -784,6 +829,10 @@ h1 {
   }
 
   #editInventory {
+    width: 50%;
+  }
+
+  #deleteInventory {
     width: 50%;
   }
 }
