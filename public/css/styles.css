@@ -615,6 +615,125 @@ h1 {
   color: #fff;
 }
 
+#updateAccount {
+  background-color: #303030;
+  padding: 20px;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5dvh;
+}
+
+#updateAccount input {
+  width: 80%;
+  height: 30px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+#updateAccount label {
+  display: block;
+  width: 80%;
+  text-align: left;
+  color: white;
+}
+
+#updateAccount button {
+  padding: 10px 15px;
+  background-color: #fff;
+  color: #000;
+  border: #000;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#updateAccount p {
+  color: #fff;
+}
+
+#updateAccount a {
+  color: #fff;
+}
+
+#updateAccount ul {
+  width: 80%;
+  color: white;
+  text-align: left;
+}
+
+#updateAccount span {
+  display: block;
+  width: 80%;
+  color: #fff;
+  text-align: left;
+  font-size: .7rem;
+}
+
+#updatePassword {
+  background-color: #303030;
+  padding: 20px;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#updatePassword input {
+  width: 80%;
+  height: 30px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+#updatePassword label {
+  display: block;
+  width: 80%;
+  text-align: left;
+  color: white;
+}
+
+#updatePassword button {
+  padding: 10px 15px;
+  background-color: #fff;
+  color: #000;
+  border: #000;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#updatePassword p {
+  color: #fff;
+}
+
+#updatePassword a {
+  color: #fff;
+}
+
+#updatePassword ul {
+  width: 80%;
+  color: white;
+  text-align: left;
+}
+
+#updatePassword span {
+  display: block;
+  width: 80%;
+  color: #fff;
+  text-align: left;
+  font-size: .7rem;
+}
+
 @media screen and (min-width: 790px) {
   #content {
     display: flex;
@@ -833,6 +952,14 @@ h1 {
   }
 
   #deleteInventory {
+    width: 50%;
+  }
+
+  #updatePassword {
+    width: 50%;
+  }
+
+  #updateAccount {
     width: 50%;
   }
 }
