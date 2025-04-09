@@ -2,6 +2,7 @@ const express = require("express")
 const router = new express.Router()
 const utilities = require("../utilities")
 const accountController = require("../controllers/accountController")
+const reviewController = require("../controllers/reviewController")
 const regValidate = require('../utilities/account-validation')
 
 router.get("/login", utilities.handleErrors(accountController.buildLogin));
@@ -40,5 +41,6 @@ router.post(
   utilities.handleErrors(accountController.updatePassword)
 )
 router.get("/logout", utilities.handleErrors(accountController.logout))
+router.get("/reviews/:accountId", utilities.checkLogin, utilities.handleErrors(reviewController.getReviewsByAccountId))
 
 module.exports = router;

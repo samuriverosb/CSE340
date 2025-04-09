@@ -734,6 +734,217 @@ h1 {
   font-size: .7rem;
 }
 
+#editReview {
+  background-color: #303030;
+  padding: 20px;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#editReview input {
+  width: 80%;
+  height: 30px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+#editReview label {
+  display: block;
+  width: 80%;
+  text-align: left;
+  color: white;
+}
+
+#editReview button {
+  padding: 10px 15px;
+  background-color: #fff;
+  color: #000;
+  border: #000;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#editReview p {
+  color: #fff;
+}
+
+#editReview span {
+  display: block;
+  width: 80%;
+  color: #fff;
+  text-align: left;
+  font-size: .7rem;
+}
+
+#editReview input, #editReview textarea, #editReview select {
+  width: 80%;
+  height: 30px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+#editReview textarea {
+  height: 70px;
+}
+
+#deleteReview {
+  background-color: #303030;
+  padding: 20px;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#deleteReview input {
+  width: 80%;
+  height: 30px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+#deleteReview label {
+  display: block;
+  width: 80%;
+  text-align: left;
+  color: white;
+}
+
+#deleteReview button {
+  padding: 10px 15px;
+  background-color: #fff;
+  color: #000;
+  border: #000;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#deleteReview p {
+  color: #fff;
+}
+
+#deleteReview span {
+  display: block;
+  width: 80%;
+  color: #fff;
+  text-align: left;
+  font-size: .7rem;
+}
+
+#deleteReview input, #deleteReview textarea, #deleteReview select {
+  width: 80%;
+  height: 30px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+#deleteReview textarea {
+  height: 70px;
+}
+
+#reviewList {
+  border: 1px solid #303030;
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.review {
+  margin-bottom: 40px;
+}
+
+.reviewer {
+  font-size: small;
+  margin-top: 5px;
+}
+
+.editReviewButton, .deleteReviewButton {
+  margin-right: 20px;
+  font-size: small;
+}
+
+#reviewAdd {
+  background-color: #303030;
+  padding: 20px;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#reviewAdd input {
+  width: 80%;
+  height: 30px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+#reviewAdd label {
+  display: block;
+  width: 80%;
+  text-align: left;
+  color: white;
+}
+
+#reviewAdd button {
+  padding: 10px 15px;
+  background-color: #fff;
+  color: #000;
+  border: #000;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#reviewAdd p {
+  color: #fff;
+}
+
+#reviewAdd span {
+  display: block;
+  width: 80%;
+  color: #fff;
+  text-align: left;
+  font-size: .7rem;
+}
+
+#reviewAdd input, #reviewAdd textarea, #reviewAdd select {
+  width: 80%;
+  height: 30px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+#reviewAdd textarea {
+  height: 70px;
+}
+
+.addReviewTitle {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 @media screen and (min-width: 790px) {
   #content {
     display: flex;
@@ -960,6 +1171,22 @@ h1 {
   }
 
   #updateAccount {
+    width: 50%;
+  }
+
+  #editReview {
+    width: 50%;
+  }
+
+  #deleteReview {
+    width: 50%;
+  }
+
+  #reviewAdd {
+    width: 50%;
+  }
+
+  #reviewList {
     width: 50%;
   }
 }

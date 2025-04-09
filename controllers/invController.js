@@ -1,4 +1,5 @@
 const invModel = require("../models/inventory-model")
+const reviewModel = require("../models/review-model")
 const utilities = require("../utilities/")
 
 const invCont = {}
@@ -23,12 +24,19 @@ invCont.buildByClassificationId = async function (req, res, next) {
 invCont.buildByInvId = async (req, res, next) => {
   const inventory_id = req.params.invId;
   const data = await invModel.getInventoryDetails(inventory_id);
+  const reviews = await reviewModel.getReviewsByInvId(inventory_id)
   const content = await utilities.buildDetailsView(data)
+  const reviewContent = await utilities.buildReviews(reviews, res.locals.accountData ? res.locals.accountData.account_id : null)
   let nav = await utilities.getNav();
   res.render("./inventory/details", {
     title: data.inv_make,
     nav,
     content,
+    reviewContent,
+    review_text: "",
+    inventory_id,
+    account_id: res.locals.accountData ? res.locals.accountData.account_id : null,
+    loggedin: res.locals.loggedin,
     errors: null
   })
 }
@@ -261,7 +269,7 @@ invCont.deleteInventory = async function (req, res, next) {
     req.flash("notice", `The ${itemName} was successfully deleted.`)
     res.redirect("/inv/")
   } else {
-    
+
     req.flash("notice", "Sorry, the deletion failed.")
     res.status(501).render("./inventory/delete-confirm", {
       title: "Delete " + itemName,

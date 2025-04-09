@@ -27,8 +27,8 @@
             <input type="text" name="inv_year" id="invYear" value="<%= locals.inv_year %>" pattern="^[0-9]+$"
               minlength="4" maxlength="4" required>
             <label for="inv_description">Description:</label>
-            <textarea name="inv_description" id="invDescription" maxlength="2000" required
-              value="<%= locals.inv_description %>"></textarea>
+            <textarea name="inv_description" id="invDescription" maxlength="2000"
+              required><%= locals.inv_description %></textarea>
             <label for="inv_price">Price:</label>
             <input type="number" name="inv_price" id="invPrice" value="<%= locals.inv_price %>" min="0" step="1"
               required>
@@ -44,8 +44,9 @@
                 <% } %>>
                   <input type="hidden" name="inv_image" <% if(locals.inv_image) { %> value="<%= locals.inv_image %>"
                     <% } %>>
-                    <input type="hidden" name="inv_thumbnail" <% if(locals.inv_thumbnail) { %> value="<%= locals.inv_thumbnail %>"
-                    <% } %>>
-                      <button disabled type="submit">Edit Car</button>
+                      <input type="hidden" name="inv_thumbnail" <% if(locals.inv_thumbnail) { %> value="<%=
+                        locals.inv_thumbnail %>"
+                        <% } %>>
+                          <button disabled type="submit">Edit Car</button>
           </form>
           <script src="../js/inv-update.js"></script>

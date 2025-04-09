@@ -161,4 +161,25 @@ Util.checkEmployeeOrAdmin = (req, res, next) => {
   }
 }
 
+Util.buildReviews = async (data, account_id) => {
+  let div = '';
+  if (data.length > 0) {
+    div = '<div id="reviewList">'
+    data.forEach(review => {
+      div += '<div class="review">'
+      div += '<p>' + review.review_text + '</p>'
+      div += '<p class="reviewer"><strong>' + review.account_firstname + ' ' + review.account_lastname + '</strong> On ' + new Date(review.review_date).toLocaleDateString() + ' ' + new Date(review.review_date).toLocaleTimeString() +'</p>'
+      if (String(review.account_id) === (String(account_id))) {
+        div += '<a href="/inv/edit-review/' + review.review_id + '" class="editReviewButton">Edit</a>'
+        div += '<a href="/inv/delete-review/' + review.review_id + '" class="deleteReviewButton">Delete</a>'
+      }
+      div += '</div>'
+    })
+    div += '</div>'
+  } else {
+    div += '<p class="notice">No reviews have been left yet.</p>'
+  }
+  return div
+}
+
 module.exports = Util

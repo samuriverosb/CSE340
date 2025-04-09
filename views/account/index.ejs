@@ -23,6 +23,11 @@
               Update Account Information
             </a>
           </p>
+          <p>
+            <a href="/account/reviews/<%= locals.accountData.account_id %>" title="See My Reviews">
+              See My Reviews
+            </a>
+          </p>
           <% if (locals.accountData.account_type==='Employee' || locals.accountData.account_type==='Admin' ) { %>
             <h3>Inventory Management</h3>
             <p>
